@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="it">
+    <head>
+        <!-- Meta tag essenziali, li mette sempre il prof -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>La mia pagina</title>
+
+        <!-- Preconnect va messo per entrambi i domini di Google Fonts, non solo gstatic -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
+            rel="stylesheet"
+        />
+
+        <style>
+            body {
+                padding-left: 11em;
+                font-family: "Roboto", sans-serif;
+                color: papayawhip;
+                background: midnightblue;
+                /* RIMOSSO: filter: blur(5px) — rendeva tutto illeggibile, errore classico */
+            }
+
+            ul.navbar {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                top: 2em;
+                left: 1em;
+                width: 9em;
+            }
+
+            h1 {
+                /* font-family con fallback, nel caso Helvetica non sia disponibile */
+                font-family: Helvetica, Geneva, Arial, sans-serif;
+            }
+
+            ul.navbar li {
+                background: white;
+                margin: 0.5em 0;
+                padding: 0.3em;
+                border-right: 1em solid black;
+            }
+
+            ul.navbar a {
+                font-family: "Roboto", sans-serif;
+                font-style: italic;
+                text-decoration: none;
+            }
+
+            a:link {
+                color: blue;
+            }
+
+            a:visited {
+                color: purple;
+            }
+
+            address {
+                margin-top: 1em;
+                padding-top: 1em;
+                border-top: thin dotted;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Barra di navigazione laterale -->
+        <ul class="navbar">
+            <li><a href="#">Pagina iniziale</a></li>
+            <li><a href="#">La mia città</a></li>
+            <li><a href="#">Bio</a></li>
+            <li><a href="#">Contatti</a></li>
+        </ul>
+
+        <!-- Contenuto principale della pagina -->
+        <h1>La mia prima pagina con stile!</h1>
+
+        <!-- <br> è il tag corretto, </br> non esiste in HTML -->
+        <p>
+            Benvenuti nella mia pagina in stile!<br />
+            Manca di immagini e tutto,<br />
+            Ci vorrebbe essere di più qui, ma non so ancora cosa.
+        </p>
+
+        <!-- Footer con le info di contatto / autore -->
+        <address>
+            Fatto il 24 Febbraio 2026<br />
+            Da Me
+        </address>
+    </body>
+</html>
