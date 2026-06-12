@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Teko:wght@400;600;700&display=swap");
+
+/* Reset base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+    background: linear-gradient(135deg, #021a11, #063321);
+    color: #ffffff;
+    min-height: 100vh;
+
+    /* Centro tutto il sito nella finestra */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenitore generale */
+.page-container {
+    width: 100%;
+    max-width: 1400px;
+    min-height: 100vh;
+    padding: 20px 30px;
+
+    /* Metto topbar sopra e contenuto sotto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Barra in alto */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+    transition:
+        transform 0.2s ease,
+        color 0.2s ease;
+}
+
+.menu-icon:hover {
+    color: #38f2b2;
+    transform: scale(1.1);
+}
+
+.logo {
+    font-family: "Teko", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    transition:
+        color 0.3s ease,
+        letter-spacing 0.3s ease;
+}
+
+.logo:hover {
+    color: #38f2b2;
+    letter-spacing: 5px;
+}
+
+.topbar-right {
+    display: flex;
+    gap: 20px;
+}
+
+.top-icon {
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease;
+}
+
+.top-icon:hover {
+    color: #38f2b2;
+    transform: translateY(-3px);
+}
+
+/* Layout principale */
+.main-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex: 1;
+}
+
+/* Menu verticale a sinistra */
+.side-menu {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    padding-top: 0;
+}
+
+.side-menu a {
+    color: white;
+    text-decoration: none;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 1rem;
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.side-menu a:hover {
+    color: #38f2b2;
+    transform: rotate(180deg) translateY(-6px);
+}
+
+/* Sezione hero */
+.hero-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Testo sinistro */
+.hero-left {
+    width: 250px;
+}
+
+.hero-left h2 {
+    color: #38f2b2;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    transition:
+        transform 0.3s ease,
+        letter-spacing 0.3s ease;
+}
+
+.hero-left h2:hover {
+    transform: translateX(4px);
+    letter-spacing: 1px;
+}
+
+.hero-left p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+/* Immagine centrale */
+.hero-image {
+    position: relative;
+    width: 420px;
+    height: 480px;
+    overflow: hidden;
+    clip-path: polygon(18% 0, 82% 0, 100% 0, 50% 100%, 0 0);
+    flex-shrink: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.7) saturate(1.1);
+}
+
+/* V centrale fatta con due linee */
+.v-shape {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 220px;
+    height: 260px;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.v-left,
+.v-right {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 240px;
+    background-color: #24f2b2;
+    box-shadow: 0 0 10px rgba(36, 242, 178, 0.6);
+}
+
+.v-left {
+    left: 58px;
+    transform: rotate(32deg);
+    transform-origin: top center;
+}
+
+.v-right {
+    right: 58px;
+    transform: rotate(-32deg);
+    transform-origin: top center;
+}
+
+/* Testo a destra */
+.hero-right {
+    width: 330px;
+}
+
+.hero-right h1 {
+    font-family: "Teko", sans-serif;
+    font-size: 5rem;
+    line-height: 1;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    transition:
+        transform 0.3s ease,
+        text-shadow 0.3s ease;
+}
+
+.hero-right h1:hover {
+    transform: scale(1.03);
+    text-shadow: 0 0 12px rgba(56, 242, 178, 0.35);
+}
+
+.hero-right h1 span {
+    color: #38f2b2;
+}
+
+/* Pulsanti */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 28px;
+    font-size: 1rem;
+    font-weight: 700;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.btn-green {
+    background-color: #22d89c;
+    color: white;
+}
+
+.btn-green:hover {
+    background-color: #2df0af;
+}
+
+.btn-outline {
+    border: 2px solid #4ce7b4;
+    color: white;
+}
+
+.btn-outline:hover {
+    background-color: rgba(76, 231, 180, 0.12);
+}
+
+/* Responsive semplice */
+@media (max-width: 1100px) {
+    body {
+        align-items: flex-start;
+    }
+
+    .page-container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .main-layout {
+        flex-direction: column;
+    }
+
+    .side-menu {
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 0;
+    }
+
+    .side-menu a {
+        writing-mode: horizontal-tb;
+        transform: none;
+    }
+
+    .side-menu a:hover {
+        transform: translateY(-4px);
+    }
+
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-left,
+    .hero-right {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 420px;
+        height: 420px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-right h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .topbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .page-container {
+        padding: 20px 18px;
+    }
+
+    .hero-right h1 {
+        font-size: 3.2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    .v-shape {
+        width: 160px;
+        height: 180px;
+    }
+
+    .v-left,
+    .v-right {
+        height: 170px;
+    }
+
+    .v-left {
+        left: 42px;
+    }
+
+    .v-right {
+        right: 42px;
+    }
+}

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8" />
+        <title>City Lights</title>
+
+        <!-- CSS dello slider nella cartella css -->
+        <link
+            rel="stylesheet"
+            href="css/nivo-slider.css"
+            type="text/css"
+            media="screen"
+        />
+        <link
+            rel="stylesheet"
+            href="css/default.css"
+            type="text/css"
+            media="screen"
+        />
+
+        <!-- CSS principale -->
+        <link
+            rel="stylesheet"
+            href="style.css"
+            type="text/css"
+            media="screen"
+        />
+
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Oswald:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- JS nella cartella js -->
+        <script src="js/jquery-1.7.1.min.js"></script>
+        <script src="js/jquery.nivo.slider.js"></script>
+
+        <script>
+            $(window).load(function () {
+                $("#slider").nivoSlider();
+            });
+        </script>
+    </head>
+    <body>
+        <div id="container">
+            <header id="header">
+                <h1>City Lights</h1>
+                <p>Un piccolo sito moderno con slideshow e articoli.</p>
+            </header>
+
+            <nav id="nav">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact</a>
+            </nav>
+
+            <!-- Slider con immagini nella cartella img -->
+            <section class="slider-wrapper theme-default hero-slider">
+                <div id="slider" class="nivoSlider">
+                    <img
+                        src="img/times-square-people.jpg"
+                        alt="People in Times Square"
+                        title="La città non si ferma mai"
+                    />
+                    <img
+                        src="img/times-square-traffic.jpg"
+                        alt="Traffic in Times Square"
+                        title="Luci, energia e movimento"
+                    />
+                    <img
+                        src="img/times-square-horse.jpg"
+                        alt="Horse police in Times Square"
+                        title="Una scena urbana iconica"
+                    />
+                    <img
+                        src="img/times-square.jpg"
+                        alt="Times Square street sign"
+                        title="New York di notte"
+                    />
+                </div>
+            </section>
+
+            <section class="featured-section">
+                <div class="item-evi">
+                    <h2>Contenuto in evidenza</h2>
+                    <p>
+                        Testo dell'articolo. Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+
+                <div class="item-evi">
+                    <h2>Contenuto in evidenza</h2>
+                    <p>
+                        Testo dell'articolo. Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+
+                <div class="item-evi">
+                    <h2>Contenuto in evidenza</h2>
+                    <p>
+                        Testo dell'articolo. Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </section>
+
+            <section id="mes-full">
+                <p>Messaggio Full Width</p>
+            </section>
+
+            <section class="main-content">
+                <div id="content">
+                    <article class="articolo">
+                        <img src="img/times-square.jpg" alt="Times Square" />
+                        <div>
+                            <h2>Titolo dell'articolo</h2>
+                            <p>
+                                Testo dell'articolo, Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna
+                                aliqua.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="articolo last">
+                        <img src="img/times-square.jpg" alt="Times Square" />
+                        <div>
+                            <h2>Titolo dell'articolo</h2>
+                            <p>
+                                Testo dell'articolo, Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna
+                                aliqua.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <aside id="sidebar">
+                    <h2>Sidebar</h2>
+                    <ul>
+                        <li><a href="#">My Link</a></li>
+                        <li><a href="#">My Link</a></li>
+                        <li><a href="#">My Link</a></li>
+                        <li><a href="#">My Link</a></li>
+                        <li><a href="#">My Link</a></li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section class="featured-section bottom-cards">
+                <div class="item-evi">
+                    <h2>Info</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.
+                    </p>
+                </div>
+
+                <div class="item-evi">
+                    <h2>Info</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.
+                    </p>
+                </div>
+
+                <div class="item-evi">
+                    <h2>Info</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.
+                    </p>
+                </div>
+            </section>
+
+            <footer id="footer">
+                <p>© 2026 City Lights - Footer</p>
+            </footer>
+        </div>
+    </body>
+</html>
