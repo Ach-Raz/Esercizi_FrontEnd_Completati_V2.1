@@ -15,12 +15,18 @@ Come ambiente di sviluppo è stato utilizzato l'editor **Zed**, scelto per le su
 
 ## 🛠️ Dettaglio dei Progetti
 
-Di seguito i lavori sviluppati, organizzati dai più complessi ai fondamentali per evidenziare il percorso di crescita tecnico:
+Di seguito i lavori sviluppati:
 
-### 🔹 Esercizio 4: Padronanza di Flexbox (Pixel-Perfect Layout)
-Sviluppo di una landing page partendo da un semplice screenshot di riferimento, senza l'ausilio di framework esterni.
-- **Tecnologie**: HTML5, CSS3.
-- **Obiettivo**: Utilizzo intensivo del modulo CSS Flexbox per gestire l'allineamento degli elementi, il wrapping e la distribuzione degli spazi all'interno di una navbar, una sezione hero e diverse griglie di contenuti.
+
+### 🔹 Esercizio 1: Fondamenti e Semantica HTML
+Sviluppo di una pagina web statica di base, come prima introduzione allo sviluppo front-end.
+- **Tecnologie**: HTML5.
+- **Obiettivo**: Acquisire familiarità con la sintassi, l'uso corretto dei tag semantici, l'inserimento di formattazioni, link, immagini e la strutturazione logica dei dati in pagina.
+
+### 🔹 Esercizio 2: Customizzazione Bootstrap (Portfolio)
+Adattamento del popolare tema "Freelancer" per la creazione di un portfolio personale.
+- **Tecnologie**: HTML5, Bootstrap 5, CSS Custom.
+- **Obiettivo**: Sovrascrittura controllata degli stili di base (override) per conferire un'identità visiva unica (nuova tipografia, palette cromatica definita), mantenendo intatta la struttura e la stabilità del framework originale.
 
 ### 🔹 Esercizio 3: Evoluzione di un'Interfaccia Web
 Un percorso di refactoring suddiviso in tre fasi per modernizzare un layout datato:
@@ -28,15 +34,12 @@ Un percorso di refactoring suddiviso in tre fasi per modernizzare un layout data
 2. **Versione Modernizzata (`Original Modern/`)**: Implementazione di un design responsivo (Mobile-First). Include la programmazione di uno slideshow interattivo customizzato utilizzando solo Vanilla JavaScript (con funzioni di autoscroll e controlli manuali).
 3. **Redesign Creativo (`New Project/`)**: Rielaborazione visiva completa basata su nuovi wireframe, con palette colori dedicata e una User Experience completamente rivista.
 
-### 🔹 Esercizio 2: Customizzazione Bootstrap (Portfolio)
-Adattamento del popolare tema "Freelancer" per la creazione di un portfolio personale.
-- **Tecnologie**: HTML5, Bootstrap 5, CSS Custom.
-- **Obiettivo**: Sovrascrittura controllata degli stili di base (override) per conferire un'identità visiva unica (nuova tipografia, palette cromatica definita), mantenendo intatta la struttura e la stabilità del framework originale.
 
-### 🔹 Esercizio 1: Fondamenti e Semantica HTML
-Sviluppo di una pagina web statica di base, come prima introduzione allo sviluppo front-end.
-- **Tecnologie**: HTML5.
-- **Obiettivo**: Acquisire familiarità con la sintassi, l'uso corretto dei tag semantici, l'inserimento di formattazioni, link, immagini e la strutturazione logica dei dati in pagina.
+### 🔹 Esercizio 4: Padronanza di Flexbox (Pixel-Perfect Layout)
+Sviluppo di una landing page partendo da un semplice screenshot di riferimento, senza l'ausilio di framework esterni.
+- **Tecnologie**: HTML5, CSS3.
+- **Obiettivo**: Utilizzo intensivo del modulo CSS Flexbox per gestire l'allineamento degli elementi, il wrapping e la distribuzione degli spazi all'interno di una navbar, una sezione hero e diverse griglie di contenuti.
+
 
 ---
 
